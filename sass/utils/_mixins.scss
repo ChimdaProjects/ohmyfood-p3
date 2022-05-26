@@ -22,3 +22,17 @@
         transform: scale(1.01);
     }
 }
+
+@mixin section {
+    padding: 2rem 1rem 1.5rem 1rem;
+
+}
+
+@mixin box-shadow {
+    box-shadow:  -5px -5px 20px rgb(239, 237, 237), 10px 10px 30px rgb(239, 237, 237); 
+    
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+}

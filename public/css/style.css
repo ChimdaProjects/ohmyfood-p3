@@ -27,6 +27,23 @@ h1, h3 {
   font-size: 1.4rem;
 }
 
+.presentation__btn {
+  color: #fff;
+  font-size: 0.9rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 0.8rem 2.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 2px 0 4px rgb(174, 172, 172), -2px 3px 10px rgb(174, 172, 172);
+}
+.presentation__btn:hover {
+  opacity: 0.9;
+  box-shadow: 2px 0 4px rgb(119, 119, 119), -2px 3px 10px rgb(119, 119, 119);
+  transform: scale(1.01);
+}
+
 .header__logo {
   width: 100%;
   text-align: center;
@@ -78,6 +95,73 @@ h1, h3 {
 .presentation__text {
   text-align: center;
   margin-bottom: 1.2rem;
+}
+
+.instructions {
+  padding: 2rem 1rem 1.5rem 1rem;
+}
+.instructions__title {
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.instructions__list {
+  /* display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+}
+.instructions__step {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.instructions__number {
+  background-color: #9356DC;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 12px;
+  z-index: 1;
+}
+.instructions__grp {
+  display: flex;
+  height: 1rem;
+  align-items: center;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  position: relative;
+  left: -10px;
+  box-shadow: -5px -5px 20px rgb(239, 237, 237), 10px 10px 30px rgb(239, 237, 237);
+  content: "";
+  cursor: pointer;
+}
+.instructions__grp:hover {
+  background-color: #f2eafb;
+  box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+}
+.instructions__grp__icon {
+  margin: 0 1rem 0 0.2rem;
+  font-size: 0.8rem;
+  background-clip: text;
+  color: black;
+  opacity: 1;
+}
+.instructions__grp__icon:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
