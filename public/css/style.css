@@ -27,4 +27,35 @@ h1, h3 {
   font-size: 1.4rem;
 }
 
+.header__logo {
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.header__logo__link__arrow {
+  position: absolute;
+  left: 1rem;
+}
+.header__location {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem auto;
+  background-color: #e6e6e6;
+}
+.header__location__city {
+  margin-left: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
