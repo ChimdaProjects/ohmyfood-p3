@@ -6,10 +6,13 @@
   box-sizing: inherit;
 }
 
-body {
+html {
   max-width: 1600px;
   margin: auto;
   height: 100vh;
+}
+
+body {
   box-sizing: border-box;
 }
 
@@ -75,6 +78,70 @@ h1, h3 {
   margin-left: 0.5rem;
 }
 
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333333;
+  padding: 1.5rem 2rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+.footer__title {
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+.footer__link-grp {
+  display: flex;
+  align-items: center;
+}
+.footer__link i {
+  width: 6px;
+  font-size: 10px;
+  margin-right: 1rem;
+  color: white;
+}
+.footer__link i:hover {
+  color: #9356DC;
+}
+.footer__link-txt {
+  color: white;
+}
+.footer__link-txt:hover {
+  color: #d7c0f2;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333333;
+    padding: 1.5rem 2rem;
+    line-height: 1.3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__title {
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+  .footer__link-grp {
+    display: flex;
+    align-items: center;
+  }
+  .footer__link i {
+    width: 6px;
+    font-size: 10px;
+    margin-right: 1rem;
+    color: white;
+  }
+  .footer__link-txt {
+    color: white;
+  }
+}
 .presentation {
   display: flex;
   flex-direction: column;
@@ -203,7 +270,7 @@ h1, h3 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants__list {
     display: flex;
     flex-direction: row;
@@ -211,7 +278,7 @@ h1, h3 {
   }
 }
 .restaurants__card {
-  width: 100%;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -223,6 +290,12 @@ h1, h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants__card {
+    width: 45%;
   }
 }
 .restaurants__card__thumb {
@@ -240,12 +313,30 @@ h1, h3 {
   border-radius: 2px;
   font-weight: bold;
   top: -9.5rem;
-  right: -17rem;
+  /*left:17rem ;*/
+  left: 80%;
   background-color: #99E2D0;
   color: #2c9c81;
   padding: 0.3rem;
   font-size: 0.8rem;
-  z-index: 5;
+}
+@media screen and (max-width: 374px) {
+  .restaurants__card__thumb__tag {
+    /*left:13.5rem;*/
+    left: 75%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .restaurants__card__thumb__tag {
+    /* left:90%;*/
+    left: 85%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .restaurants__card__thumb__tag {
+    /* left:90%;*/
+    left: 70%;
+  }
 }
 .restaurants__card__content {
   background-color: #fff;

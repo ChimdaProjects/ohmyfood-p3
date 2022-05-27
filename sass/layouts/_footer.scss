@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $background-footer;
+    padding: 1.5rem 2rem;
+    line-height: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+        &__title {
+            margin-bottom: 1rem;
+            font-weight: 100;
+        }
+    &__link {
+       
+        &-grp {
+            display: flex;
+            align-items: center;
+        }
+        
+        & i {
+            width: 6px;
+            font-size: 10px;
+            margin-right: 1rem;
+            color: white;
+            &:hover  {
+                color: $primary-color;
+            }
+        }
+
+        &-txt {
+            color: white;
+            &:hover {
+                color: lighten($primary-color,25);
+            }
+           
+        }
+    }
+}  
+
+
+// TODO: remplacer par les variables
+@media screen and (max-width: 750px) {
+    .footer {
+        width: 100%;
+        margin: 0 auto;
+        background-color: $background-footer;
+        padding: 1.5rem 2rem;
+        line-height: 1.3rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+            &__title{
+                margin-bottom: 1rem;
+                font-weight: 100;
+            }
+        &__link {
+            &-grp {
+                display: flex;
+                align-items: center;
+               
+            }
+            & i {
+                width: 6px;
+                font-size: 10px;
+                margin-right: 1rem;
+                color: white;
+            }
+            &-txt {
+                color: white;
+            }
+          
+           
+        }
+    }
+ }

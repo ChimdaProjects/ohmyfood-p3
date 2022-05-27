@@ -6,10 +6,13 @@
     box-sizing: inherit;
 }
 
-body {
+html {
     max-width: $max-width;
     margin: auto;
     height: 100vh;
+}
+
+body {
     box-sizing: border-box;
 }
 
