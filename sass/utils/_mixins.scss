@@ -36,3 +36,14 @@
 @mixin box-shadow-hover {
     box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
 }
+
+
+@mixin container_menu {
+     padding: 0.5rem 1rem;
+}
+
+@mixin text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

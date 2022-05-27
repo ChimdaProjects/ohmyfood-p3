@@ -3,3 +3,139 @@
     width: 100%;
     margin:0 auto;
 }  
+.menu {
+    position: relative;
+    top:-2rem;
+}
+.menu {
+    @include container_menu;
+   
+    &__img{
+        background: url('../../public/img/la_palette_du_gout.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        @media  screen and (max-width:767px){
+         
+            height: 200px;  
+        }
+        
+    }
+ 
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding:1rem;
+        align-items: center;
+        background-color: $grey-light;
+        border-radius: 1.5rem;
+        z-index: 5;
+        position:relative;
+        top:-2rem;
+        @media screen and (max-width:320px) {
+        }
+        &__title {
+            padding: 0 3rem 0 0;
+            text-transform: capitalize;
+            z-index: 5;
+            @media screen and (max-width:320px) {
+                font-size: 1.2rem;
+             
+            }
+        }
+        
+    }
+
+    &__title{
+
+        padding:0 0 0.2rem 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        border-bottom: 3px solid $tertiary-color;
+        width:3%;
+        @media screen and (max-width:320px) {
+            font-size: 1.1rem;
+            width: 15%;
+            
+        }
+    }
+    &__container {
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:1rem 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        height:4rem;
+        transform: scale(1);
+    }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 1rem;
+            padding:0.7rem;
+            @include text-ellipsis;
+
+            &__title {
+                width: 80%;
+                font-weight: bold;
+                font-size: 1rem;
+                @include text-ellipsis;
+            }
+
+            &__more {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                &__title {
+                    @include text-ellipsis;
+                    padding-right: 1.6rem;
+                }
+
+                &__price {
+                    font-weight: bold;
+                }
+            }
+        }
+        &__order {
+            background-color: $tertiary-color;
+            border:1px black;
+            width: 0%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 10px 10px 0;
+            opacity: 0;
+    
+            & i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                color:$tertiary-color;
+                background-color: #fff;
+                height:2rem;
+                border-radius: 50%;
+            }
+        }
+    
+        &__button {
+            padding: 0 0 4rem 0;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+           
+    }
+       
+    
+
