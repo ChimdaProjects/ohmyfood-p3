@@ -56,11 +56,18 @@
     
     &__number {
         background-color: $primary-color;
-        padding:0.2rem 0.4rem;
+        padding:0.2rem 0.5rem;
         border-radius: 1rem;
         color:#fff;
-        font-size: 12px;
+        font-size: 1rem;
         z-index:1;
+        @media screen and (max-width:767px) {
+            padding:0.2rem 0.4rem;
+            border-radius: 1rem;
+            color:#fff;
+            font-size: 12px;
+            z-index:1;
+        }
     }
 
     &__grp {
@@ -83,13 +90,19 @@
     
         &__icon {
             margin: 0 1rem 0 0.2rem ;
-            font-size: 0.8rem;
+            font-size: 1rem;
             background-clip: text;
             color:black;
             opacity: 1;
             &:hover {
                 color:$primary-color;
             }
+            @media screen and (max-width:767px) {
+                font-size: 0.8rem;
+            }
+        }
+        &__text {
+            font-size: 1rem;
         }      
     }  
 }

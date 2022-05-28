@@ -8,7 +8,6 @@
             animation: all 0.3s linear;
             transition-duration:0.8s;
             transform: scale(1.1);
-            @include box-shadow-hover;
             @media screen and (max-width:767px) {
                 width: 10%;
             }

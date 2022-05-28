@@ -276,7 +276,6 @@ h1, h3 {
   animation: all 0.3s linear;
   transition-duration: 0.8s;
   transform: scale(1.1);
-  box-shadow: 2px 0px 10px rgb(152, 151, 151), -2px 3px 10px rgb(152, 151, 151);
 }
 @media screen and (max-width: 767px) {
   .menu__container:hover .menu__order {
@@ -530,11 +529,20 @@ h1, h3 {
 }
 .instructions__number {
   background-color: #9356DC;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 1rem;
   color: #fff;
-  font-size: 12px;
+  font-size: 1rem;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .instructions__number {
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 12px;
+    z-index: 1;
+  }
 }
 .instructions__grp {
   display: flex;
@@ -556,13 +564,21 @@ h1, h3 {
 }
 .instructions__grp__icon {
   margin: 0 1rem 0 0.2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-clip: text;
   color: black;
   opacity: 1;
 }
 .instructions__grp__icon:hover {
   color: #9356DC;
+}
+@media screen and (max-width: 767px) {
+  .instructions__grp__icon {
+    font-size: 0.8rem;
+  }
+}
+.instructions__grp__text {
+  font-size: 1rem;
 }
 
 .restaurants {
