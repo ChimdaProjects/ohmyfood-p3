@@ -8,3 +8,22 @@
     opacity:0;
     transition:color 1s ease;
 }
+
+/* HEART ICON in EACH MENU */
+.heart-menu {
+    position: absolute;
+    transform: translate(-50%);
+    padding-right:1rem;
+    font-size: 1.5rem;  
+}
+
+.menu {
+     &__header {
+        &:hover .fas {
+            opacity: 1;
+            animation: FadeIn 1s;
+            overflow: hidden;
+            
+        }
+     }
+ }

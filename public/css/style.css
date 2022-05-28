@@ -226,6 +226,20 @@ h1, h3 {
   transition: color 1s ease;
 }
 
+/* HEART ICON in EACH MENU */
+.heart-menu {
+  position: absolute;
+  transform: translate(-50%);
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu__header:hover .fas {
+  opacity: 1;
+  animation: FadeIn 1s;
+  overflow: hidden;
+}
+
 .header__logo {
   width: 100%;
   text-align: center;
@@ -679,10 +693,6 @@ h1, h3 {
   padding: 0 0 4rem 0;
   display: flex;
   justify-content: center;
-}
-
-.heart-menu {
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
