@@ -1,0 +1,15 @@
+    
+#menu-starter .menu__content  {
+    animation: cards 0.4s linear;
+    
+}
+    
+#menu-main .menu__content {
+    animation: cards 0.4s linear;
+    animation-delay: 1s;
+}
+
+#menu-dessert .menu__content {
+    animation: cards 0.4s linear;
+    animation-delay: 2s;
+}

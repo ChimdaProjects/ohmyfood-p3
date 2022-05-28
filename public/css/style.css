@@ -303,6 +303,20 @@ h1, h3 {
   border-radius: 50%;
 }
 
+#menu-starter .menu__content {
+  animation: cards 0.4s linear;
+}
+
+#menu-main .menu__content {
+  animation: cards 0.4s linear;
+  animation-delay: 1s;
+}
+
+#menu-dessert .menu__content {
+  animation: cards 0.4s linear;
+  animation-delay: 2s;
+}
+
 .header__logo {
   width: 100%;
   text-align: center;
