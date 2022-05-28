@@ -95,3 +95,40 @@
         opacity: 1;
     }
   }
+
+/*Cards menu appearance*/
+@keyframes cards {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+  }
+
+
+@keyframes rotation-icon {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slidein {
+  
+    0% {
+        transform: rotate(0deg);      
+        opacity: 0;
+    }
+        
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+        }
+}
+    
+

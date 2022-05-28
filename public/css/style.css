@@ -119,6 +119,35 @@ h1, h3 {
     opacity: 1;
   }
 }
+/*Cards menu appearance*/
+@keyframes cards {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes rotation-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 .presentation__btn {
   color: #fff;
   font-size: 0.9rem;
@@ -238,6 +267,40 @@ h1, h3 {
   opacity: 1;
   animation: FadeIn 1s;
   overflow: hidden;
+}
+
+/* layout of icon check and animation*/
+.menu__container:hover .menu__order {
+  width: 5%;
+  opacity: 1;
+  animation: all 0.3s linear;
+  transition-duration: 0.8s;
+  transform: scale(1.1);
+  box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+}
+.menu__container:hover .menu__order__icon {
+  animation: rotation-icon 0.5s ease-in;
+}
+.menu__order {
+  background-color: #99E2D0;
+  border: 1px black;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  opacity: 0;
+}
+.menu__order i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #99E2D0;
+  background-color: #fff;
+  height: 2rem;
+  border-radius: 50%;
 }
 
 .header__logo {
@@ -667,27 +730,6 @@ h1, h3 {
 }
 .menu__content__more__price {
   font-weight: bold;
-}
-.menu__order {
-  background-color: #99E2D0;
-  border: 1px black;
-  width: 0%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 10px 10px 0;
-  opacity: 0;
-}
-.menu__order i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: #99E2D0;
-  background-color: #fff;
-  height: 2rem;
-  border-radius: 50%;
 }
 .menu__button {
   padding: 0 0 4rem 0;
