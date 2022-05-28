@@ -14,7 +14,6 @@
     @include container_menu;
    //TODO faire une boucle pour les images (rajouter différentes classes img-1, img-2 etc..)
     &__img{
-        background: url('../../public/img/la_palette_du_gout.jpg');
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -22,9 +21,13 @@
         @media  screen and (max-width:767px){
             height: 200px;  
         }
-        
     }
- 
+    @for $i from 1 through 4 {
+        &__img-#{$i} {
+           background-image: url('../../public/img/img-menu-#{$i}.jpg'); 
+        }
+    }
+   
     &__header {
         width: 100%;
         display: flex;
