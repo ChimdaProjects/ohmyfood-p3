@@ -124,7 +124,12 @@
         flex-wrap: wrap;
         flex-direction: column;
         margin:1rem;
-        @include box-shadow-hover;
+        transform: scale(1);
+        @include box-shadow;
+        &:hover {
+            transform: scale(1.01);
+           
+        }
         @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: column;

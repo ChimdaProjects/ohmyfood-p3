@@ -1,15 +1,18 @@
+/* animation of each menu   */
+
     
-#menu-starter .menu__content  {
-    animation: cards 0.4s linear;
-    
-}
-    
-#menu-main .menu__content {
-    animation: cards 0.4s linear;
-    animation-delay: 1s;
+#menu-main  {
+    animation-delay: 3s;
 }
 
-#menu-dessert .menu__content {
-    animation: cards 0.4s linear;
-    animation-delay: 2s;
+#menu-dessert {
+    animation-delay: 5s;
 }
+@for $i from 1 through 10 {
+    .menu:nth-child(#{$i}){ 
+        animation: cards 0.4s linear;
+        animation-delay: $i * 200ms; 
+    }
+ 
+}
+  

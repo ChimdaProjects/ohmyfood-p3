@@ -12,7 +12,6 @@
 }
 .menu {
     @include container_menu;
-   //TODO faire une boucle pour les images (rajouter différentes classes img-1, img-2 etc..)
     &__img{
         background-size: cover;
         background-position: center;
@@ -80,8 +79,6 @@
         width: 100%;
         height:4rem;
         transform: scale(1);
-       
-
     }
         &__content {
             display: flex;

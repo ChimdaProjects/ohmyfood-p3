@@ -276,7 +276,12 @@ h1, h3 {
   animation: all 0.3s linear;
   transition-duration: 0.8s;
   transform: scale(1.1);
-  box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+  box-shadow: 2px 0px 10px rgb(152, 151, 151), -2px 3px 10px rgb(152, 151, 151);
+}
+@media screen and (max-width: 767px) {
+  .menu__container:hover .menu__order {
+    width: 10%;
+  }
 }
 .menu__container:hover .menu__order__icon {
   animation: rotation-icon 0.5s ease-in;
@@ -303,18 +308,63 @@ h1, h3 {
   border-radius: 50%;
 }
 
-#menu-starter .menu__content {
-  animation: cards 0.4s linear;
+/* animation of each menu   */
+#menu-main {
+  animation-delay: 3s;
 }
 
-#menu-main .menu__content {
-  animation: cards 0.4s linear;
-  animation-delay: 1s;
+#menu-dessert {
+  animation-delay: 5s;
 }
 
-#menu-dessert .menu__content {
+.menu:nth-child(1) {
   animation: cards 0.4s linear;
-  animation-delay: 2s;
+  animation-delay: 200ms;
+}
+
+.menu:nth-child(2) {
+  animation: cards 0.4s linear;
+  animation-delay: 400ms;
+}
+
+.menu:nth-child(3) {
+  animation: cards 0.4s linear;
+  animation-delay: 600ms;
+}
+
+.menu:nth-child(4) {
+  animation: cards 0.4s linear;
+  animation-delay: 800ms;
+}
+
+.menu:nth-child(5) {
+  animation: cards 0.4s linear;
+  animation-delay: 1000ms;
+}
+
+.menu:nth-child(6) {
+  animation: cards 0.4s linear;
+  animation-delay: 1200ms;
+}
+
+.menu:nth-child(7) {
+  animation: cards 0.4s linear;
+  animation-delay: 1400ms;
+}
+
+.menu:nth-child(8) {
+  animation: cards 0.4s linear;
+  animation-delay: 1600ms;
+}
+
+.menu:nth-child(9) {
+  animation: cards 0.4s linear;
+  animation-delay: 1800ms;
+}
+
+.menu:nth-child(10) {
+  animation: cards 0.4s linear;
+  animation-delay: 2000ms;
 }
 
 .header__logo {
@@ -502,7 +552,7 @@ h1, h3 {
 }
 .instructions__grp:hover {
   background-color: #f2eafb;
-  box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+  box-shadow: 2px 0px 10px rgb(152, 151, 151), -2px 3px 10px rgb(152, 151, 151);
 }
 .instructions__grp__icon {
   margin: 0 1rem 0 0.2rem;
@@ -553,7 +603,11 @@ h1, h3 {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 1rem;
-  box-shadow: 2px 0 px rgb(181, 181, 181), -2px 3px 10px rgb(177, 177, 177);
+  transform: scale(1);
+  box-shadow: -5px -5px 20px rgb(239, 237, 237), 10px 10px 30px rgb(239, 237, 237);
+}
+.restaurants__card:hover {
+  transform: scale(1.01);
 }
 @media screen and (max-width: 767px) {
   .restaurants__card {
