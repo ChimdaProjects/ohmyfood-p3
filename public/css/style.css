@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -30,6 +31,94 @@ h1, h3 {
   font-size: 1.4rem;
 }
 
+/* LOADER */
+/* flouter le background */
+@keyframes blur {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader-img {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: translateY(-20%);
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-40%);
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: translateY(-20%);
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0%);
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+@keyframes loader-bottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+/* rotation des borders */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* disparition du texte */
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* ICONE HEART */
+/* remplissage de l'icône */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .presentation__btn {
   color: #fff;
   font-size: 0.9rem;
@@ -45,6 +134,96 @@ h1, h3 {
   opacity: 0.9;
   box-shadow: 2px 0 4px rgb(119, 119, 119), -2px 3px 10px rgb(119, 119, 119);
   transform: scale(1.01);
+}
+
+#loader {
+  background-color: #fff;
+}
+
+.loader {
+  height: 100vh;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 160px;
+  width: 260px;
+  height: 260px;
+  /* placement au milieu de la page */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  animation: spin 3s forwards;
+  z-index: 10;
+}
+
+.loader__text {
+  width: 200px;
+  z-index: 5;
+  position: absolute;
+  top: 59%;
+  margin: auto;
+  left: 0;
+  text-align: center;
+  right: 0;
+  z-index: 5;
+  animation: fadeout 3s forwards;
+}
+
+.header, .main__homepage {
+  animation: blur 4s;
+}
+
+.top-img img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  opacity: 1;
+  animation: loader-img 2s forwards;
+  content: "";
+}
+.top-img img::before {
+  position: relative;
+  left: -30%;
+  right: 2px;
+  content: "ohmyfood";
+  color: black;
+  z-index: -1;
+}
+
+.bottom-img img {
+  width: 100px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: 2px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: -100px;
+  left: 0;
+  right: -5px;
+  z-index: 5;
+  /*animation: fadeout 5s forwards;*/
+  animation: loader-bottom 2s forwards;
+}
+
+.fa-heart {
+  position: absolute;
+  transform: translate(-70%, -50%);
+}
+
+.fas {
+  background-color: #fff;
+  color: #FF79DA;
+  opacity: 0;
+  transition: color 1s ease;
 }
 
 .header__logo {

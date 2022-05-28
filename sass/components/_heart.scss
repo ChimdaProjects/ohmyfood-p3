@@ -1,0 +1,10 @@
+.fa-heart {
+    position: absolute;
+    transform: translate(-70%,-50%);
+}
+.fas {
+    background-color: #fff;
+    color: $secondary-color;
+    opacity:0;
+    transition:color 1s ease;
+}
