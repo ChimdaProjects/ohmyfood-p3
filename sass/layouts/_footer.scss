@@ -8,12 +8,16 @@
     flex-direction: row;
     justify-content: space-evenly;
     color: white;
+
         &__title {
             margin-bottom: 1rem;
             font-weight: 100;
         }
+
     &__link {
-       
+       &:hover i {
+        color: lighten($primary-color,25);
+       }
         &-grp {
             display: flex;
             align-items: center;
@@ -24,17 +28,13 @@
             font-size: 10px;
             margin-right: 1rem;
             color: white;
-            &:hover  {
-                color: $primary-color;
-            }
         }
 
         &-txt {
             color: white;
             &:hover {
                 color: lighten($primary-color,25);
-            }
-           
+               }
         }
     }
 }  
@@ -59,8 +59,8 @@
             &-grp {
                 display: flex;
                 align-items: center;
-               
             }
+
             & i {
                 width: 6px;
                 font-size: 10px;
@@ -74,4 +74,11 @@
            
         }
     }
+ }
+
+ @media  screen and (min-width: 768px) and (max-width: 1023px) {
+     .footer {
+         display: flex;
+         flex-direction: column;
+     }
  }
