@@ -414,7 +414,7 @@ h1, h3 {
   height: 3rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem auto;
+  padding: 1rem 0;
   background-color: #e6e6e6;
 }
 .header__location__city {
