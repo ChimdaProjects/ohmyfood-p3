@@ -52,6 +52,7 @@
         @media screen and (min-width:$desktop-s) and (max-width:2600px) {
             width: 70%;
             margin: auto;
+            justify-content: center;
         }
 
         &__title {
@@ -64,6 +65,7 @@
             }
             @media screen and (min-width:$desktop-s) and (max-width:2600px) {
                 width: 70%;
+                text-align: center;
               
             }
         }

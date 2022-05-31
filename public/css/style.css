@@ -907,6 +907,7 @@ h2, h3 {
   .menu__header {
     width: 70%;
     margin: auto;
+    justify-content: center;
   }
 }
 .menu__header__title {
@@ -922,6 +923,7 @@ h2, h3 {
 @media screen and (min-width: 1024px) and (max-width: 2600px) {
   .menu__header__title {
     width: 70%;
+    text-align: center;
   }
 }
 .menu__header__title::first-letter {
