@@ -704,7 +704,6 @@ h2, h3 {
 }
 .instructions__grp:hover {
   background-color: #f2eafb;
-  box-shadow: 2px 0px 10px rgb(152, 151, 151), -2px 3px 10px rgb(152, 151, 151);
 }
 .instructions__grp:hover .instructions__grp__icon {
   color: #9356DC;

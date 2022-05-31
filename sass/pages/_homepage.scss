@@ -82,7 +82,7 @@
         cursor: pointer;
         &:hover {
             background-color: lighten($primary-color,35);
-            @include box-shadow-hover;
+          
         }
         &:hover &__icon {
            color:$primary-color;
