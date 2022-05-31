@@ -6,6 +6,10 @@
             animation-delay: $i * 0.2s; 
         } 
     }
+    @media screen and (min-width:$desktop-s) and (max-width:2600px) {
+        width: 70%;
+        margin:0 auto
+    }
 
     &__title{
         padding:0 0 0.2rem 0;
@@ -36,7 +40,7 @@
         height:4rem;
         transform: scale(1);
     }
-    
+
         &__content {
             display: flex;
             flex-direction: column;

@@ -3,13 +3,16 @@
 .menu {
     &__container {
         &:hover .menu__order {
-            width:5%;
+            width:8%;
             opacity: 1;
             animation: all 0.3s linear;
             transition-duration:0.8s;
             transform: scale(1.1);
-            @media screen and (max-width:767px) {
+            @media screen and (max-width:$mob-l) {
                 width: 20%;
+            }
+            @media screen and (min-width:$tab-min) and (max-width:$tab-max) {
+                width: 9%;
             }
         }
         &:hover .menu__order__icon {
