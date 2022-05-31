@@ -259,13 +259,11 @@ h2, h3 {
   z-index: 5;
   opacity: 1;
   animation: loader-img 5s forwards;
-  content: "";
 }
 .top-img img::before {
   position: relative;
   left: -30%;
   right: 2px;
-  content: "ohmyfood";
   color: black;
   z-index: -1;
 }
@@ -477,6 +475,7 @@ h2, h3 {
 .footer__title {
   margin-bottom: 1rem;
   font-weight: 100;
+  font-family: "Shrikhand", cursive, sans-serif;
 }
 .footer__link:hover i {
   color: #d7c0f2;
