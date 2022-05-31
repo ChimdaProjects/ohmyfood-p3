@@ -319,7 +319,7 @@ h2, h3 {
 }
 @media screen and (max-width: 767px) {
   .menu__container:hover .menu__order {
-    width: 10%;
+    width: 20%;
   }
 }
 .menu__container:hover .menu__order__icon {
@@ -347,7 +347,9 @@ h2, h3 {
   border-radius: 50%;
 }
 
-/* animation of each menu   */
+.menu {
+  /*loop for the animation of each menu*/
+}
 .menu .menu__container:nth-child(1) {
   animation: cards 0.4s linear;
   animation-delay: 0.2s;
@@ -427,6 +429,70 @@ h2, h3 {
 .menu .menu__container:nth-child(20) {
   animation: cards 0.4s linear;
   animation-delay: 4s;
+}
+.menu__title {
+  padding: 0 0 0.2rem 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 3px solid #99E2D0;
+  width: 3%;
+}
+@media screen and (max-width: 320px) {
+  .menu__title {
+    font-size: 1.1rem;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .menu__title {
+    width: 10%;
+  }
+}
+.menu__container {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 100%;
+  height: 4rem;
+  transform: scale(1);
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__content__title {
+  width: 80%;
+  font-weight: bold;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__content__more {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menu__content__more__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 1.6rem;
+}
+.menu__content__more__price {
+  font-weight: bold;
 }
 
 .header__logo {
@@ -778,6 +844,7 @@ h2, h3 {
 
 .menu {
   padding: 0.5rem 1rem;
+  /* loop for include background image for each menu*/
 }
 .menu__img {
   background-size: cover;
@@ -830,70 +897,6 @@ h2, h3 {
 }
 .menu__header__title::first-letter {
   text-transform: capitalize;
-}
-.menu__title {
-  padding: 0 0 0.2rem 0;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  border-bottom: 3px solid #99E2D0;
-  width: 3%;
-}
-@media screen and (max-width: 320px) {
-  .menu__title {
-    font-size: 1.1rem;
-    width: 15%;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 767px) {
-  .menu__title {
-    width: 10%;
-  }
-}
-.menu__container {
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  width: 100%;
-  height: 4rem;
-  transform: scale(1);
-}
-.menu__content {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  width: 100%;
-  border-radius: 1rem;
-  padding: 0.7rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.menu__content__title {
-  width: 80%;
-  font-weight: bold;
-  font-size: 1rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.menu__content__more {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.menu__content__more__title {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-right: 1.6rem;
-}
-.menu__content__more__price {
-  font-weight: bold;
 }
 .menu__button {
   padding: 0 0 4rem 0;
