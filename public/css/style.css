@@ -243,7 +243,7 @@ h2, h3 {
   animation: fadeout 5s forwards;
 }
 
-.header, .main__homepage {
+.header-homepage, .main__homepage {
   animation: blur 5s;
 }
 
