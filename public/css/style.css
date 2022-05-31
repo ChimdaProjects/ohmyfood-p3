@@ -299,7 +299,6 @@ h2, h3 {
 /* HEART ICON in EACH MENU */
 .heart-menu {
   position: absolute;
-  transform: translate(-50%);
   padding-right: 1rem;
   font-size: 1.5rem;
 }
