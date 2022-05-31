@@ -900,5 +900,10 @@ h2, h3 {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 2600px) {
+  .menu__button {
+    padding: 2.2rem 0 4rem 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
