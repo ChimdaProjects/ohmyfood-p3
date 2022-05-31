@@ -17,13 +17,14 @@
        bottom:-60px;
        left:0;
        right: 0;
-       animation: spin 3s forwards;
+       animation: spin 5s forwards;
        z-index: 10;
        
        
    }
    
    .loader__text {
+       font-family: $font-2;
        width: 200px;
        z-index: 5;
        position: absolute;
@@ -33,11 +34,11 @@
        text-align: center;
        right: 0;
        z-index:5;
-       animation: fadeout 3s forwards;
+       animation: fadeout 5s forwards;
         
    }
    .header, .main__homepage {
-       animation: blur 4s;
+       animation: blur 5s;
    }
    
    .top-img img {
@@ -51,7 +52,7 @@
        right: 0;
        z-index:5;
        opacity: 1;
-       animation: loader-img 2s forwards ;
+       animation: loader-img 5s forwards ;
        content:"";
        &::before {
            position: relative;
@@ -77,5 +78,5 @@
     right: -5px;
     z-index: 5;
     /*animation: fadeout 5s forwards;*/
-    animation: loader-bottom 2s forwards;
+    animation: loader-bottom 5s forwards;
 }

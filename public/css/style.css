@@ -8,14 +8,46 @@
   box-sizing: inherit;
 }
 
+/*mini reset CSS */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, p, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
 html {
   max-width: 1600px;
   margin: auto;
   height: 100vh;
-}
-
-body {
-  box-sizing: border-box;
 }
 
 a {
@@ -27,9 +59,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h3 {
+h1 .menu__header__title {
   font-family: "Shrikhand", cursive, sans-serif;
-  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  h2, h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* LOADER */
@@ -184,11 +225,12 @@ h1, h3 {
   bottom: -60px;
   left: 0;
   right: 0;
-  animation: spin 3s forwards;
+  animation: spin 5s forwards;
   z-index: 10;
 }
 
 .loader__text {
+  font-family: "Shrikhand", cursive, sans-serif;
   width: 200px;
   z-index: 5;
   position: absolute;
@@ -198,11 +240,11 @@ h1, h3 {
   text-align: center;
   right: 0;
   z-index: 5;
-  animation: fadeout 3s forwards;
+  animation: fadeout 5s forwards;
 }
 
 .header, .main__homepage {
-  animation: blur 4s;
+  animation: blur 5s;
 }
 
 .top-img img {
@@ -216,7 +258,7 @@ h1, h3 {
   right: 0;
   z-index: 5;
   opacity: 1;
-  animation: loader-img 2s forwards;
+  animation: loader-img 5s forwards;
   content: "";
 }
 .top-img img::before {
@@ -241,7 +283,7 @@ h1, h3 {
   right: -5px;
   z-index: 5;
   /*animation: fadeout 5s forwards;*/
-  animation: loader-bottom 2s forwards;
+  animation: loader-bottom 5s forwards;
 }
 
 .fa-heart {
@@ -683,7 +725,6 @@ h1, h3 {
   border-radius: 2px;
   font-weight: bold;
   top: -9.5rem;
-  /*left:17rem ;*/
   left: 80%;
   background-color: #99E2D0;
   color: #2c9c81;
@@ -780,14 +821,17 @@ h1, h3 {
   }
 }
 .menu__header__title {
+  font-family: "Shrikhand", cursive, sans-serif;
   padding: 0 3rem 0 0;
-  text-transform: capitalize;
   z-index: 5;
 }
 @media screen and (max-width: 320px) {
   .menu__header__title {
     font-size: 1.2rem;
   }
+}
+.menu__header__title::first-letter {
+  text-transform: capitalize;
 }
 .menu__title {
   padding: 0 0 0.2rem 0;

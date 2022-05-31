@@ -5,15 +5,39 @@
     padding: 0;
     box-sizing: inherit;
 }
+/*mini reset CSS */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,p,h5,h6{
+    margin:0;padding:0
+}
+
+ul {
+    list-style:none
+}
+button,input,select {
+    margin:0
+}
+html{
+    box-sizing:border-box
+}
+img,video {
+    height:auto;
+    max-width:100%
+}
+iframe {
+    border:0
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+td,th{
+    padding:0
+}
 
 html {
     max-width: $max-width;
     margin: auto;
     height: 100vh;
-}
-
-body {
-    box-sizing: border-box;
 }
 
 a {
