@@ -1,9 +1,8 @@
 #loader {
-    background-color: #fff;
-    
-   }
+    background-color: #fff;    
+}
    
-   .loader {
+.loader {
        height: 100vh;
        border-top: 10px solid $primary-color;
        border-bottom: 10px solid $secondary-color;
@@ -18,17 +17,15 @@
        left:0;
        right: 0;
        animation: spin 5s forwards;
-       z-index: 10;
-       
-       
-   }
+       z-index: 10;    
+}
    
-   .loader__text {
+.loader__text {
        font-family: $font-2;
        width: 200px;
        z-index: 5;
        position: absolute;
-       top: 59%;
+       top: 62%;
        margin: auto;
        left:0;
        text-align: center;
